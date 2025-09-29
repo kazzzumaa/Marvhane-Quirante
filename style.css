@@ -1,0 +1,73 @@
+ body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: url('cvsu.png') center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .side-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 230px;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-right: 2px solid rgba(97, 218, 251, 0.6);
+    backdrop-filter: blur(4px);
+  }
+
+  .side-cont{
+    color: #61dafb;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .side-cont a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .side-cont a:hover {
+    color: #fff;
+    background: rgba(97, 218, 251, 0.2);
+    border-left: 4px solid #61dafb;
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 40px;
+  }
+
+  .section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .section.active {
+    display: block; 
+  }
+
+  .section h3 {
+    color: #61dafb;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    color: #eee;
+    line-height: 1.6;
+  }

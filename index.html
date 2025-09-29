@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <link rel="stylesheet" href="style.css">
+<title>Portfolio in ITEC 55</title>
+
+</head>
+<body>
+
+<div class="side-cont">
+  <h2>Portfolio in ITEC 55</h2>
+  <a onclick="showSection('all')">All</a>
+  <a onclick="showSection('seatwork')">Seatwork</a>
+  <a onclick="showSection('quiz')">Quizzes</a>
+  <a onclick="showSection('labact')">Lab Activity</a>
+  <a onclick="showSection('pt')">Exam</a>
+</div>
+
+<div class="content">
+
+  <div id="all" class="section active">
+    <h3>All Works</h3>
+    <p>SOON</p>
+  </div>
+
+  <div id="seatwork" class="section">
+    <h3>Seatwork</h3>
+    <p>SOON</p>
+  </div>
+
+  <div id="quiz" class="section">
+    <h3>Quizzes</h3>
+    <p>SOON</p>
+  </div>
+
+  <div id="labact" class="section">
+    <h3>Lab Activities</h3>
+    <p>SOON</p>
+  </div>
+
+  <div id="pt" class="section">
+    <h3>Exams</h3>
+    <p>SOON</p>
+  </div>
+
+</div>
+<script>
+  function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
